@@ -109,5 +109,68 @@ Revenue can be domestic gross which is revenue income from a certain region or c
 - Missing values - some features may contain missing values that may affect the analysis of the data.
 - NAN values - Some key features in the dataset may contain NAN values that might reduce the accuracy of the analysis and may cause errors during analysis if not acted upon.
 
+## Data Preparation
+Under this section, we will go each chosen dataset and clean in preparation for analysis.
+
+Cleaning of a dataset is very crucial to maintain accuracy as it removes errors and inconsistencies that may cause issues during analysis.
+
+Another reason is to maintain consistency and efficiency of the data.
+
+We would also want to maintain the integrity of our data.
+
+Doing so, we will be looking mainly for missing values, NAN values, duplicate values and dropping unecessary columns that could affect our accuracy during analysis.
+
+Pandas library will be used as tool to clean the selected datasets.
+
+### Handling Missing values
+In data preparation we handle missing values to maintain the integrity of our data, accuracy to ensure our data is not biased and consistency to make it easier for analysis.
+
+In this subsection, missing values will be handled by:
+- Identifying the number of missing values in each column of each dataset.
+
+#### Identifying missing values in dataset tmdb.movies.csv.gz
+Outcome shows dataset tmdb.movies.csv.gz has no missing values.
+
+#### Identifying missing values in dataset tn.movie_budgets.csv.gz
+Results shows dataset tn.movie_budgets.csv.gz has no missing values.
+
+### Handling NAN Values
+In this section we will be handling NAN values.
+
+It is important to handle NAN values they reduce data quality indicating missing values, affect statistical analysis such as mean and standard deviation which is important during the analysis stage of this project.
+
+It also affects visualization which is an important aspect of this project as they lead to misleading and incomplete visualizations.
+
+The NAN values will be handled by:
+- Calculating the percentage of NAN values for each column in each selected dataset.
+
+#### Calculating the percentage of NAN values for each column in dataset tmdb.movies.csv.gz
+The dataset tmbd.movies.csv.gz has no NAN values
+
+#### Calculating the percentage of NAN values for each column in dataset tn.movie_budgets.csv.gz
+The dataset tn.movies_budgets.csv.gz has no NAN values.
+
+### Handling NULL Values
+Since we have database, it is important to check if the database ha NULL values.
+We check for NULL values to maintain data integrity as NuLL values indicate incomplete or missing values.
+Maintain accuracy during analysis as NULL values affect accuracy of a model.
+
+#### Checking for NULL values in the database im.db.zip
+From the codes above it shows our column movie_id, primary_title and start_year do not have null values, but our main column of focus genres has null values.
+
+To handle null values in column genres we will delete the rows that have null values.
+From the codes above columns average rating and numvotes from table movie_rating do not have null values.
+
+### Handling Duplicated values
+We handle duplicated values to maintain accuracy during analysis especially during statistical analysis of means, variances and standard deviatiom.
+We also handle duplicates to maintain data consistency and integrity.
+
+#### Checking for duplicated values in dataset tmdb.movies.csv.gz
+Outcome is that dataset tmdb.movies.csv.gz has no duplicated values.
+
+##### Checking for duplicated values in dataset tn.movie_budgets.csv.gz
+Outcome shows that dataset tn.movie_budgets.csv.gz has no duplicated values.
+
+
 ## Conclusion
 
