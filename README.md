@@ -15,7 +15,13 @@ Examining factors such as the movie budget, special effects used, storyline of t
 ### 3. Understand the market insights
 Understand which movie genres are popular with which type of age group and gender as different audiences have different preferences. Example is child under the age 10 primarily girls would prefer to watch animated barbie movies.
 ### 4. Recommendations
-After doing the analysis and investigation, we can translate our findings and strategies to the new movie studio on the film genres that are likely to succeed with their characteristics and themes.
+1. Budget vs Revenue - Understand the relationship between the budget used to make the movies and the revenue received by the movie studio after the movie sales. We want to understand which aspect influences the other and how can it used by the stakeholders to make the movie studio a success.
+
+2. Popularity vs Audience - Understand the relationship between popularity and the given audience. In the case popularity refers to how popular a certain film is and audience refers to the number of people who watch the certain films based on their popularity. We want to understand how the popularity of a film affects the number of people who go watch the certain films, and how it can be used by the movie studio stakeholders to make the movie studio succeed.
+
+3. Rating - Understand of a rating of a movie influences the success of a movie. Rating of the movies are made by the audience and influence the number of people who watch the movies. We want to understand how this aspect can be used the stakeholders to make the movie studio a success.
+
+4. Genres - This is the categories of movies which can either be romance action etc. Every audience have different preferences in terms of genres. As a movie we want to understand how different genres influence the success of a movie and with other aspects such as rating and popularity.
 
 ## Business Understanding
 ## Introduction
@@ -71,7 +77,7 @@ The implications set by the project to the stakeholders include:
 5. The audience will be able to watch and enjoy movies tailored to their needs and promote it by giving it a high rating.
 
 
-## Data Understanding and Analysis
+## Data Understanding 
 ### Data Sources
 #### 1. Box-office Mojo
 This is a detailed database that tracks box-office revenues of different types of movies world-wide and their overall financial performance of the movies.
@@ -170,6 +176,82 @@ Outcome is that dataset tmdb.movies.csv.gz has no duplicated values.
 
 ##### Checking for duplicated values in dataset tn.movie_budgets.csv.gz
 Outcome shows that dataset tn.movie_budgets.csv.gz has no duplicated values.
+
+## Data Analysis
+In this section we will be applying statistical measures and logical techniques to evaluate and analyze data.
+
+The chosen datasets specific for this project include tn.movie_budgets.csv.gz, tmdb.movies.csv.gz and database im.db.zip.
+
+Each of these datasets will be analyzed through various methods such as hypothesis testing and linear regression.
+
+Our recommendations in this case is what we stated under our goals, to help understand and implement ways in which each stakeholder can take the movie studio a successs.
+
+Our findings will be the results achieved after analysis.
+
+These methods will help us create findings to our business problem and use our analysis and findings as recommendations to our business problem.
+
+We will also be able to explain why our findings support our recommendations and how the recommendations will help the new movie studio succeed.
+
+### Methods
+#### 1. Hypothesis testing 
+This is one of the methods that will be used for analysis. Under hypothesis testing, we will be able to analyze each of the datasets to achieve our findings. The findings will be used to explain why it supports our recommendations.
+
+In hypothesis testing, we will be defining the null and alternative hypothesis of each of the datasets and concluding if we are able to reject the null hypothesis or if we fail to reject the null hypothesis.
+
+Statistical tests such as t_tests, correlation will be used with, p-values and alpha values will be used to help us either reject or fail to reject the null hypothesis.
+
+The analysis will be either one-tailed or two-tailed depending on the specific finding.
+
+We will be using an alpha value of 0.05.
+
+##### 1. Dataset tmdb.movies.csv.gz
+Bugdet vs Revenue is one of our recommendations as listed in our business understanding as way of making our movie studio succeed.
+
+Revenue is divided into domestic gross and worldwide gross. These types of revenue generated depends on the production budget used by the movie studio.
+
+The production budget used by the movie studio is used by the film and production team to make the movie that fits the audience requirements.
+
+The production budget is approved by the company executives and provided by the investors.
+
+This dataset has three specific columns that we will be using that is production budget, domestic gross and worldwide gross, we will be using these columns to generate both null and alternative hypothesis to see if production budget is associated with domestic gross and worldwide gross.
+
+###### Null and Alternative Hypothesis
+- Null Hypothesis (Ho)
+
+The null hypothesis generated between production budget and domestic gross is that there is no relationship between production budget of a movie and the domestic gross generated.
+
+This means that changes in production budget whether a high production or not is not associated with the domestic gross generated.
+
+The null hypothesis generated between production budget and worldwide gross is that there is no relationship between production budget of a movie and the worldwide gross generated.
+
+This means that changes in production budget whether a high production or not is not associated with the worldwide gross generated.
+
+- Alternative Hypothesis (H1)
+
+The alternative hypothesis generated between production budget and domestic gross is that there is a significant relationship between production budget of a movie and the domestic gross generated.
+
+The alternative hypothesis generated between production budget and domestic gross is that there is a significant relationship between production budget of a movie and the domestic gross generated.
+
+This means that changes in production budget whether a high production or not is associated with the domestic gross generated.
+
+The alternative hypothesis generated between production budget and domestic gross is that there is a significant relationship between production budget of a movie and the worldwide gross generated.
+
+This means that changes in production budget whether a high production or not is associated with the worldwide gross generated.
+
+To get our findings we will use pearson correlation to generate the correlation and the p-value. So that we can be able to either reject or fail to reject our null hypothesis.
+
+##### Results
+From the analysis, the findings achieved shows that we reject the null hypothesis with significance to the alpha value since the p-value is 1.8046848891196828e-22 less the than the alpha value 0.05. Between domestic gross and production budget.
+
+For worldwide gross and production budget, the findings achieved shows that we reject the null hypothesis with significance to the alpha value since the p-value is 4.7264202307731374e-138,
+
+In conclusion we do accept there is a relationship between domestic gross and production budget.
+
+In conclusion we do accept there is a relationship between worldwide gross and production budget.
+
+Our findings supports our recommendations which is budget vs revenue such that some films with high production budgets tend to generate a lot revenue in terms of domestic gross and world wide gross as shown in the visualizations above,  but sometimes that does not seem to be the case as some of them with high production budget generate low revenue compared to other movies with low production due to some factors such as popularity of the film and marketing of the film.
+
+For my recommendations which is revenue, i would suggest to the movie studio to invest in the production budget for the film and production team  of a film, as low production budgets leads to low return in revenue in terms of domestic gross and worldwide gross. Investing money to the production budget will lead to high return in revenue in terms of domestic gross and world wide gross.
 
 
 ## Conclusion
