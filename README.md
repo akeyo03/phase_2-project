@@ -241,9 +241,9 @@ This means that changes in production budget whether a high production or not is
 To get our findings we will use pearson correlation to generate the correlation and the p-value. So that we can be able to either reject or fail to reject our null hypothesis.
 
 ##### Results
-From the analysis, the findings achieved shows that we reject the null hypothesis with significance to the alpha value since the p-value is 1.8046848891196828e-22 less the than the alpha value 0.05. Between domestic gross and production budget.
+From the analysis, the findings achieved shows that we reject the null hypothesis with significance to the alpha value since the p-value is 0.0 less the than the alpha value 0.05. Between domestic gross and production budget.
 
-For worldwide gross and production budget, the findings achieved shows that we reject the null hypothesis with significance to the alpha value since the p-value is 4.7264202307731374e-138,
+For worldwide gross and production budget, the findings achieved shows that we reject the null hypothesis with significance to the alpha value since the p-value is 0.0 less than the alpha value.
 
 In conclusion we do accept there is a relationship between domestic gross and production budget.
 
@@ -252,6 +252,73 @@ In conclusion we do accept there is a relationship between worldwide gross and p
 Our findings supports our recommendations which is budget vs revenue such that some films with high production budgets tend to generate a lot revenue in terms of domestic gross and world wide gross as shown in the visualizations above,  but sometimes that does not seem to be the case as some of them with high production budget generate low revenue compared to other movies with low production due to some factors such as popularity of the film and marketing of the film.
 
 For my recommendations which is revenue, i would suggest to the movie studio to invest in the production budget for the film and production team  of a film, as low production budgets leads to low return in revenue in terms of domestic gross and worldwide gross. Investing money to the production budget will lead to high return in revenue in terms of domestic gross and world wide gross.
+
+##### 1. Dataset tmdb.movies.csv.gz
+One of our recommendations is popularity vs audience. In the case popularity refers to how popular a certain film is and audience refers to the number of people who watch the certain films based on their popularity.
+
+Popularity of a film is based on how the film is promoted by the market and sales team and how the audience viewed the movie that was made by the film production team.
+
+The audience refers to the number of people of watch the film. This affects the rating of the film as the people who watch the film rate the films, which influences the success of the film.
+
+A movie that is highly rated guarantees high return in terms pf revenue and also based on popularity.
+
+The dataset tmb.movies.csv.gz has 3 columns that we will be that popularity average, vote counts and vote average. We will be able to associate popularity average and vote counts and form a hypothesis, same to vote counts and vote average to be able to form another hypothesis.
+
+##### Null and Alternative Hypothesis
+- Null hypothesis(Ho)
+The null hypothesis states that there is no significant relationship between popularity and vote counts.
+
+The other null hypothesis states that there is no significant relationship between vote counts and vote average.
+
+- Alternative hypothesis(H1)
+The alternative hypothesis state that there is a significant reletionship between popularity and vote counts.
+
+This means changes in popularity is associated with vote counts which determines the number of people who watch based on the film popularity.
+
+The alternative hypothesis states there is a significant relationship between vote counts and vote average.
+
+This means changes in vote counts is associated with vote average which determines the rating of the films.
+
+To get our findings we will use pearson correlation to generate the correlation and the p-value. So that we can be able to either reject or fail to reject our null hypothesis.
+
+##### Results
+For the relationship between popularity and vote count, we conclude our findings to reject the null hypothesis with signifinance with alpha value having a p-value of 0.0 less than the alpha value.
+
+In conclusion we do accept there is a relationship between popularity and vote count.
+
+We do support our recommendation which is popularity vs the number of audience accepting that films that have higher popularity tend to attract more people to go watch it compared to films that have a low popularity which tends to attract less people to watch the film.
+
+This recommendation can enable the movie studio succeed by advising the studi0 to budget for the promotion of the movie which done by the market and sales team. The market and sales team are tasked with finding ways to promote the movie to make it popular by doing promo shoots, posters about the movie and interviews about the movie.
+
+For the relationship between vote counts and vote average, we conclude our findings to reject the null hypothesis with signficance with the alpha value having a p-value of 4.364473564674249e-45.
+
+In conclusion we do accept there is a significant relationship between vote count and vote average.
+
+We do support our recommendation which is rating of movies is significant such that a high rated film depends when more people who have watched the film and a low rated film comes about when less people have watched the film.
+
+This recommendation can enable the movie studio succeed by advising the studi0 to budget for the promotion of the movie which done by the market and sales team. The market and sales team are tasked with finding ways to promote the movie to make it popular by doing promo shoots, posters about the movie and interviews about the movie. By promoting the film, more people go to watch it and those end up rating the film highly and vice versa.
+
+##### 3. Database im.db.zip
+One of our recommendations is genres. Genres is defined as the categories of films either romance, action , animation etc. Different audiences have different preferences in terms of genres. In the box office the most genres that do well are mainly animation and action this is because of their intended audience.
+
+Animated films mainly preferred by children and adults who love animations. This occurs with different genres depending on the preference of the audience.
+
+Genres affect the number of people go watch the movies and the rating of the movies.
+
+Our database im.db.zip expands on different film genres, the number of votes the different genres  of the films get and the average rating of the films based on the genres.
+
+##### Null and Alternative Hypothesis
+- Null hypothesis
+The null hypothesis states that there is no significant difference between the number of vote across different genres.
+
+The null hypothesis states that there is no significant difference between the average rating across different genres.
+
+- Alternative hypothesis
+The alternative hypothesis states there is a significant difference between the number of votes across different genres. Meaning the number of votes are different across different genres.
+
+The alternative hypothesis states there is a significant difference between the avearage rating across different genres. Meaning the average rating is different across different genres.
+
+For this test we shall use Anova as genres is categorical and a string and we want to compare it to the numerical data numvotea and average rating.
 
 
 ## Conclusion
