@@ -320,6 +320,32 @@ The alternative hypothesis states there is a significant difference between the 
 
 For this test we shall use Anova as genres is categorical and a string and we want to compare it to the numerical data numvotea and average rating.
 
+##### Results
+For the relationship between genres and number of votes, we conclude our findings to reject the null hypothesis starting there is a significance number of votes across different genres.
+
+From the visualization we can see that the genre with the highest number of votes is action, adventure ans Sci-fi as per the analysis showing that this genre is the most watched.
+
+We do support our recommendation of genres, stating that different genres are watched by different audiences as different audiences have different preferences.
+
+Our recommendation can support the movie studio by enabling the film production team to research on different genres and understand audience preferences. This can enable them to make films based on different genres such as animation for kids to gross a lot money in the box office as the animation genre is most loved by children.
+
+Through this the movie studio will be able to generate a lot of income in the box office.
+
+For the relationship between genres and average rating , we conclude our findings to reject the null hypothesis starting there is a significance number of votes across different genres.
+
+We do support our recommendation of genres, stating that different genres are watched by different audiences as different audiences have different preferences hence have different rating to them.
+
+Our recommendation can support the movies studio by enabling the film production team to research on different genres and understand audience preferences. Different genres have different ratings as the number of people watch the film genres the more the rating of the film increases based on the genre.
+
+Through this the movie studio will be able to generate a lot of income in the box office.
+
+#### 2. Linear Regression
+This is another method that will be used for analysis. In linear regression, we will be able to identify independent and dependent variables and identify if there is a linear relationship between them.
+
+From this we want to know if we will be able to predict the values of the dependent variable from the independent variable and find out if there is a linear relationship between the two variables.
+
+Independent and dependent variables will be identified from the various datasets. Methods such as r-squared will be used to interpret what percentage of the dependent variable is explained from the prediction, f-statistic and p-value.
+
 
 ## Conclusion
 
