@@ -346,6 +346,10 @@ From this we want to know if we will be able to predict the values of the depend
 
 Independent and dependent variables will be identified from the various datasets. Methods such as r-squared will be used to interpret what percentage of the dependent variable is explained from the prediction, f-statistic and p-value.
 
+##### 1. Dataset tn.movie_budgets.csv.gz
+For this datasets we shall define the independent and dependent variables. The independent variable is production budget and the dependent variables are domestic gross and world wide gross.
+
+We shall visualize the independent variable with each of the dependent variables and create a linear relationship for both of them.
 
 ## Conclusion
 
