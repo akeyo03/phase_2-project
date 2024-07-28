@@ -114,6 +114,8 @@ Revenue can be domestic gross which is revenue income from a certain region or c
 ### Limitations
 - Missing values - some features may contain missing values that may affect the analysis of the data.
 - NAN values - Some key features in the dataset may contain NAN values that might reduce the accuracy of the analysis and may cause errors during analysis if not acted upon.
+- NULL values
+- Duplicated values
 
 ## Data Preparation
 Under this section, we will go each chosen dataset and clean in preparation for analysis.
@@ -339,6 +341,7 @@ Our recommendation can support the movies studio by enabling the film production
 
 Through this the movie studio will be able to generate a lot of income in the box office.
 
+![alt text](image-3.png)
 #### 2. Linear Regression
 This is another method that will be used for analysis. In linear regression, we will be able to identify independent and dependent variables and identify if there is a linear relationship between them.
 
@@ -351,5 +354,77 @@ For this datasets we shall define the independent and dependent variables. The i
 
 We shall visualize the independent variable with each of the dependent variables and create a linear relationship for both of them.
 
+##### Results
+From the relationship between production budget and domestic gross, the rsquared results show that our model explains 47% of the variance in domestic gross the dependent variable.
+
+The visualization of the relationship between production budget and domestic gross, it shows that the linear relationship between the two is quite minimal. This means that a higher production budget can be able to gross a high domestic gross  but that is not a guarantee as not every time a film with a high production budget generates a high domestic gross.
+
+This is seen as some movies with low production budget are able to generate a high domestic gross. This means it is not a guarantee that a high production budget predicts a high domestic gross.
+
+
+From the relationship between production budget and world wide  gross, the rsquared results show that our model explains 56% of the variance in domestic gross the dependent variable.
+
+The visualization of the relationship between production budget and world wide  gross, it shows that the linear relationship between the two is quite minimal. This means that a higher production budget can be able to gross a high world wide gross  but that is not a guarantee as not every time a film with a high production budget generates a high world wide gross.
+
+This is seen as some movies with low production budget are able to generate a high world wide gross. This means it is not a guarantee that a high production budget predicts a high world wide gross.
+
+![alt text](image-2.png)
+
+#### 2. Dataset tmdb.movies.csv.gz
+For this the independent and dependent variables are popularity and vote count. We will you these two variables to create a linear regression relationship.
+
+The independent variable for the second one is vote count and the dependent variable is vote average and we will use these variables to create a linear regression relationship.
+
+##### Results
+From the relationship between popularity and vote count, the rsquared results show that our model explains 48% of the variance vote count the dependent variable.
+
+The visualization shows a linear regression relationship between popularity and vote count. The trend shows that higher popularity sometimes lead to higher audience watch time in watching the films.
+
+However the relationship is not very strong as some movies which are quite popular do not have many audience watch time and some movies that are not that popular receive many audience watch time.
+
+Our linear regression between the two variables can be to predict that some popular films are able to predict a high number of watch time from the audience.
+
+From the relationship between vote average and vote count, the rsquared results show that our model explains 74% of the variance vote average the dependent variable.
+
+Vote average in this case is rating of a movie.
+
+The visualization shows a linear regression relationship between vote count and vote average, the trend of the relationship indicates a positive correlation between vote count and vote average. This suggests that increase in vote count leads to increase in vote average of a certain film.
+
+Our linear regression shows that our independent variable vote count is able to predict values of our dependent variable vote average.
+
+![alt text](image-1.png)
+
+
 ## Conclusion
+
+### Business Recommendation 1
+My first business recommenation for the new movie studio, is to emphasize more on what the audience like to see.
+
+We all know that every audiences have different preferences according to age, hobbies and characteristics as they watch films that relate to them.
+
+As a new movie studio, I would engage the movie studio film and production who are one of the stakeholders to prioritize genres as a way of attracting different audiences to watch the films. As different audiences have different preferences when it comes to genres.
+
+Prioritizing genres can lead to popularity of films making the popular at the box office.
+
+### Business Recommendation 2
+Another business recommendation, I would recommend to the new movie studio is a way of promoting the films. This can be done through the marketing and sales team. 
+
+By doing this, this makes the films become popular among the audience. As seen through the linear regression between popularity and vote count, popularity of a film influnces the number of people who end up watching the film based on the popularity. 
+
+This leads to the movie generating money in the box office. The number of people who end up watching the movie also influences the rating of the movies.
+
+Movies that have a high number of audiences receive a high rating from the audience influencing more people to watch the movies.
+
+Increasing the gross income of the movies in the box office.
+
+### Business Recommendation 3
+The last recommendation I would the movie studio to prioritize production budget which is used by the film production team. Production budget is essential as it helps the production team to create a team that meets the audience reguirements.
+
+The production budget is approved by the company executives and provided by the investors who are stakeholders of the movie studio.
+
+A high production sometimes guarantees that a movies grosses a lot of income in the box office in the terms of domestic and world wide gross, but sometimes not all the time as some movies with a low production budget grosses more than movies with a high production budget as per the analysis.
+
+## Links
+Link to notebook - https://github.com/akeyo03/phase_2-project/blob/main/notebooks/final.ipynb
+link to presentation - https://github.com/akeyo03/phase_2-project/blob/main/presentation.pdf
 
