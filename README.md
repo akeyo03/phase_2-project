@@ -406,6 +406,7 @@ As a new movie studio, I would engage the movie studio film and production who a
 
 Prioritizing genres can lead to popularity of films making the popular at the box office.
 
+![alt text](image4-1.png)
 ### Business Recommendation 2
 Another business recommendation, I would recommend to the new movie studio is a way of promoting the films. This can be done through the marketing and sales team. 
 
@@ -416,6 +417,8 @@ This leads to the movie generating money in the box office. The number of people
 Movies that have a high number of audiences receive a high rating from the audience influencing more people to watch the movies.
 
 Increasing the gross income of the movies in the box office.
+
+![alt text](image3-1.png)
 
 ### Business Recommendation 3
 The last recommendation I would the movie studio to prioritize production budget which is used by the film production team. Production budget is essential as it helps the production team to create a team that meets the audience reguirements.
